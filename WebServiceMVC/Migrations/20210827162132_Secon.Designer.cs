@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebServiceMVC.Models;
 
 namespace WebServiceMVC.Migrations
 {
     [DbContext(typeof(WebServiceMVCContext))]
-    partial class WebServiceMVCContextModelSnapshot : ModelSnapshot
+    [Migration("20210827162132_Secon")]
+    partial class Secon
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
