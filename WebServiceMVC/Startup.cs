@@ -37,7 +37,8 @@ namespace WebServiceMVC
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<WebServiceMVCContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("WebServiceMVCContext")));
+                    options.UseMySql(Configuration.GetConnectionString("WebServiceMVCContext"), builder =>
+                    builder.MigrationsAssembly("WebServiceMVC")));  
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
