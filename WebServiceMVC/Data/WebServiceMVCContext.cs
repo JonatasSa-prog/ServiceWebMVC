@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using WebServiceMVC.Models;
 
-namespace WebServiceMVC.Data
+namespace WebServiceMVC.Models
 {
     public class WebServiceMVCContext : DbContext
     {

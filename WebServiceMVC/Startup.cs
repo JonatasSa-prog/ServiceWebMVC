@@ -11,6 +11,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using WebServiceMVC.Data;
+using WebServiceMVC.Services;
+using WebServiceMVC.Models;
 
 namespace WebServiceMVC
 {
@@ -41,6 +43,8 @@ namespace WebServiceMVC
                     builder.MigrationsAssembly("WebServiceMVC")));
 
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
