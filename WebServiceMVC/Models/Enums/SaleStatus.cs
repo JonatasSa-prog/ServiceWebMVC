@@ -7,8 +7,8 @@ namespace WebServiceMVC.Models.Enums
 {
     public enum SaleStatus : int
     {
-        PEDDING = 0,
-        BILLED = 1,
-        CANCELED = 2
+        Pending = 0,
+        Billed = 1,
+        Canceled = 2
     }
 }
