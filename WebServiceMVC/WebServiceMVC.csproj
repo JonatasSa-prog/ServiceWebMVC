@@ -31,6 +31,16 @@
     <Compile Remove="Controllers\HomeController1.cs" />
     <Compile Remove="Models\Class.cs" />
     <Compile Remove="Models\Class1.cs" />
+    <Compile Remove="Views\Sellers\HomeController.cs" />
+    <Compile Remove="Views\Sellers\ViewCell.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Sellers\Index1.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Sellers\ViewCell.xaml" />
   </ItemGroup>
 
   <ItemGroup>
